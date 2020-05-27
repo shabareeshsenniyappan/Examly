@@ -50,7 +50,7 @@ sample output:
 Score of Sabareesh for
 	JAVA is : 20
 	C_PLUS_PLUS is : 29
-	C is : 38
+	C is : 38 
 The Program is Executed for : 1359 milliseconds
 
       
