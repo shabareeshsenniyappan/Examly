@@ -4,7 +4,7 @@ Derive an algorithm for efficiently predicting the Coding skill score of a stude
 
 input format (File):
 First line of the input file is name of the Student.
-Second line of the input is n number of test attended by a student.
+Second line of the input is n number of tests attended by a student.
 Following n*2 number of lines
        first line consist of space separated inputs of:
             Total score of the question.
@@ -14,13 +14,13 @@ Following n*2 number of lines
             Average time taken.
             No.of correct responses.
             NO. of wrong responses.
-       second line consist of space separated inputs of:
+       second line consists of space separated inputs of:
             Scored gained by a student.
             Time taken by a student to answer the question.
             No.of times programming question compiled.
             No.of times MCQ answers were changed.
             Answer of a student is correct or wrong (true/false).
-Next line consist of N number of learning videos viewed by a student
+Next line consists of N number of learning videos viewed by a student
        following N lines of space separated:
             Language of the video (JAVA, C, C_PLUS_PLUS, DOT_NET, PYTHON).
             No. of videos viewed.
