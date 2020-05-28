@@ -153,11 +153,13 @@ class ScoreCalculation {
 			scorePercentage = scorePercentage + (scorePercentage * responsesPercent) / 100;
 		}
 		if (currStudent.video.get(question.language) > 10) {
-			Long maxPercent = 1L;
+			Long maxPercent = 5L;
 			Long videoViewed = currStudent.video.get(question.language) - 10;
 			videoViewed = videoViewed / 10;
 			if (videoViewed > maxPercent) {
 				scorePercentage -= maxPercent;
+			} else {
+			scorePercentage-= videoViewed;
 			}
 		}
 		if (isCorrect && timeTakePercentage > 0) {
