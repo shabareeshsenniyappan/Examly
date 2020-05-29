@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function download(name, type) {
+			Math.floor((Math.random() * 10) + 1);
+			var quesCount = document.getElementById("noOfQuestions").value;
+			var text = 'Sabareesh\n'+quesCount;
+			var language = ["JAVA", "C", "C_PLUS_PLUS", "DOT_NET"];
+			var type = ["MCQ", "FILL_UP", "PROGRAM"];
+			var level = ["HIGH", "LOW", "MEDIUM"];
+			var videoMap = ["JAVA", Math.floor((Math.random() * 50)), "C", Math.floor((Math.random() * 50)),
+				"C_PLUS_PLUS", Math.floor((Math.random() * 50)), "DOT_NET", Math.floor((Math.random() * 50))];
+			var boolOptions = [false, true];
+			for (var i = 0; i < quesCount; i++) {
+				var crctResp = Math.floor((Math.random() * 100));
+				text += "\n100 " + language[Math.floor((Math.random() * language.length))] + " " + type[Math.floor((Math.random() * type.length))] + " " + level[Math.floor((Math.random() * level.length))] + " " + Math.floor((Math.random() * 1800) + 1) + " " + crctResp + " " + (100-crctResp);
+				var scoreGained = Math.floor((Math.random() * 100)%20 + 70);
+				text+= "\n"+ scoreGained + " " + Math.floor((Math.random() * 4200) + 1) + " " + Math.floor((Math.random() * 50) + 1) + " " + Math.floor((Math.random() * 25) + 1) + " " + (scoreGained>=40?true:false);
+			}
+			text+="\n" + videoMap.length/2;
+			for(var i=0;i<videoMap.length;i+=2) {
+				text+= "\n"+videoMap[i]+" "+videoMap[i+1]
+			}
+			var a = document.getElementById("a");
+			var file = new Blob([text], { type: type });
+			a.href = URL.createObjectURL(file);
+			a.download = name;
+			document.getElementById('a').click();
+		}
+	</script>
+</head>
+
+<body>
+	No Of Questions : &nbsp;&nbsp;&nbsp;<input type="number" id="noOfQuestions" /><br />
+
+	<a href="" id="a" style="display: none;">click here to download your file</a>
+	<button onclick="download('myfilename.txt', 'text/plain')">Create file</button>
+</body>
+
+</html>
