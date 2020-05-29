@@ -25,11 +25,13 @@ Next line consists of N number of learning videos viewed by a student
             Language of the video (JAVA, C, C_PLUS_PLUS, DOT_NET, PYTHON).
             No. of videos viewed.
 SAMPLE URL OF THE FILE  
-      https://github.com/shabareeshsenniyappan/Examly/blob/master/100%20Questions.txt
+    100 input file  https://raw.githubusercontent.com/shabareeshsenniyappan/Examly/master/100%20Questions.txt
+    10000 input file  https://raw.githubusercontent.com/shabareeshsenniyappan/Examly/master/10000%20Questions.txt
+    100000 input file https://raw.githubusercontent.com/shabareeshsenniyappan/Examly/master/100000%20Questions.txt
 Sample input:
 //URL file//
 
-https://github.com/shabareeshsenniyappan/Examly/blob/master/100%20Questions.txt
+https://raw.githubusercontent.com/shabareeshsenniyappan/Examly/master/100%20Questions.txt
 
 Sabareesh
 100
